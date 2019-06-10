@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="css/idangerous.swiper2.7.6.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.3dflow.css">
+    <!-- <script src="js/idangerous.swiper2.7.6.min.js"></script>
+    <script src="js/idangerous.swiper.3dflow.js"></script> -->
+    <script>
+        document.write("<scr" + "ipt src=\"js/idangerous.swiper2.7.6.min.js\"></sc" + "ript>");
+        document.write("<scr" + "ipt src=\"js/idangerous.swiper.3dflow.js\"></sc" + "ript>");
+        
+    </script>
+</head>
+
+<body>
+
+    <div class="swiper-container" style="height:300px!important;padding:80px 0;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="css/img/1.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/2.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/3.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/1.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/2.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/3.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/1.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/2.jpg" width="100%"></div>
+            <div class="swiper-slide"><img src="css/img/3.jpg" width="100%"></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                //Scrollbar don't work correctly when loop mode is enabled
+                loop: false,
+                centerFirstSlide: true,
+                centerLastSlide: true,
+
+                //Enable 3D Flow
+                tdFlow: {
+                    rotate: -60,
+                    stretch: 0,
+                    depth: 0,
+                    shadows: true
+                },
+                //Add Scrollbar
+                scrollbar: {
+                    container: '.swiper-scrollbar',
+                    hide: false,
+                    draggable: true
+                }
+            })
+        }
+    </script>
+</body>
